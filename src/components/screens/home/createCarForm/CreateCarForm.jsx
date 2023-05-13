@@ -36,6 +36,7 @@ const CreateCarForm = () => {
             {...register('image', { required: true })}
             placeholder='Image'
         />
+        
         <button>Create</button>
     </form>
 }

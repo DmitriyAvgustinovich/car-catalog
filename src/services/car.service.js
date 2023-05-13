@@ -16,8 +16,9 @@ export const CarService = {
     async create(data) {
         const hardcodeData = {
             ...data,
+            price: parseFloat(data.price),
             description: "This is an example car",
-            category: "Cars",
+            category: "Cars"
         };
         return axios.post("https://fakestoreapi.com/products", hardcodeData);
     }

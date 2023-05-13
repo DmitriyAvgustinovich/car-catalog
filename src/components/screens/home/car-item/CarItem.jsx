@@ -16,11 +16,13 @@ function CarItem({ car }) {
                 <div className={styles.info}>
                     <h2>{car.title}</h2>
 
-                    <p>{new Intl.NumberFormat('ru-RU', {
+                    <p>{car.price}</p>
+
+                    {/* <p>{new Intl.NumberFormat('ru-RU', {
                         style: 'currency',
                         currency: 'USD'
                     }).format(car.price)}
-                    </p>
+                    </p> */}
 
                     <Link
                         className='btn'
