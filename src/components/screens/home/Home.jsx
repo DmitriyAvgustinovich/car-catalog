@@ -38,7 +38,7 @@ function Home() {
             <CreateCarForm />
 
             <div>
-                {data.length ? (
+                {data ? (
                     data.map(car => <CarItem key={car.id}
                         car={car} />)
                 ) : (
